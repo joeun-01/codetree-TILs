@@ -27,7 +27,6 @@ public class Main {
 
                     if(cont >= M) {
                         cnt++;
-                        cont = 1;
                     }
                 } else {
                     num = table[i][j];
@@ -44,7 +43,6 @@ public class Main {
 
                     if(cont >= M) {
                         cnt++;
-                        cont = 1;
                     }
                 } else {
                     num = table[i][j];
