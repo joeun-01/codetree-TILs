@@ -24,14 +24,15 @@ public class Main {
             for(int j = 1; j < N; j++) {
                 if(table[i][j] == num) {
                     cont++;
+
+                    if(cont >= M) {
+                        cnt++;
+                        cont = 1;
+                    }
                 } else {
                     num = table[i][j];
                     cont = 1;
                 }
-            }
-
-            if(cont >= M) {
-                cnt++;
             }
         }
 
@@ -40,14 +41,15 @@ public class Main {
             for(int i = 1; i < N; i++) {
                 if(table[i][j] == num) {
                     cont++;
+
+                    if(cont >= M) {
+                        cnt++;
+                        cont = 1;
+                    }
                 } else {
                     num = table[i][j];
                     cont = 1;
                 }
-            }
-
-            if(cont >= M) {
-                cnt++;
             }
         }
 
