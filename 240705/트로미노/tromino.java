@@ -26,6 +26,12 @@ public class Main {
 
                     sum = table[i][j] + table[i][j + 1] + table[i + 1][j + 1];
                     max = Math.max(max, sum);
+
+                    sum = table[i + 1][j] + table[i][j + 1] + table[i + 1][j + 1];
+                    max = Math.max(max, sum);
+
+                    sum = table[i][j] + table[i + 1][j] + table[i][j + 1];
+                    max = Math.max(max, sum);
                 }
 
                 if(j + 2 < M) {
