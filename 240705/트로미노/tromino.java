@@ -50,8 +50,8 @@ public class Main {
                 }
 
 
-                if(i - 2 >= 0 && j - 2 >= 0) {
-                    int sum = table[i][j] + table[i - 1][j - 1] + table[i - 2][j - 2];
+                if(i - 2 >= 0 && j + 2 < M) {
+                    int sum = table[i][j] + table[i - 1][j + 1] + table[i - 2][j + 2];
                     max = Math.max(max, sum);
                 }
             }
