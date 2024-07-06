@@ -19,7 +19,7 @@ public class Main {
 
         int max = 0;
         for(int i = 0; i < N; i++) {
-            for(int j = 0; j < M; j++) {
+            for(int j = 0; j < N; j++) {
                 int k = 1;
 
                 while(2 * k + 1 <= N) {
