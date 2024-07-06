@@ -22,7 +22,7 @@ public class Main {
             for(int j = 0; j < N; j++) {
                 int k = 1;
 
-                while(2 * k + 1 <= N) {
+                while(k <= N) {
                     int gold = 0;
                     int cost = (k * k) + ((k + 1) * (k + 1));
 
