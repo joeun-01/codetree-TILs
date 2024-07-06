@@ -34,56 +34,29 @@ public class Main {
                             }
 
                             if(c == 0) {
-                                if(i - r >= 0 && table[i - r][j] == 1) {
-                                    // System.out.println((i - r) + " " + j + " " + r + " " + c);
-                                    gold++;
-                                }
-                                if(i + r < N && table[i + r][j] == 1) {
-                                    // System.out.println((i + r) + " " + j + " " + r + " " + c);
-                                    gold++;
-                                }
+                                if(i - r >= 0 && table[i - r][j] == 1) gold++;
+                                if(i + r < N && table[i + r][j] == 1) gold++; 
 
                                 continue;
                             }
 
                             if(r == 0) {
-                                if(j - c >= 0 && table[i][j - c] == 1) {
-                                    // System.out.println((i) + " " + (j - c) + " " + r + " " + c);
-                                    gold++;
-                                }
-                                if(j + c < N && table[i][j + c] == 1) {
-                                    // System.out.println((i) + " " + (j + c) + " " + r + " " + c);
-                                    gold++;
-                                }
+                                if(j - c >= 0 && table[i][j - c] == 1) gold++;
+                                if(j + c < N && table[i][j + c] == 1) gold++;
 
                                 continue;
                             }
 
                             if(j + c < N) {
-                                if(i - r >= 0 && table[i - r][j + c] == 1) {
-                                    // System.out.println((i - r) + " " + (j + c) + " " + r + " " + c);
-                                    gold++;
-                                }
-                                if(i + r < N && table[i + r][j + c] == 1) {
-                                    // System.out.println((i + r) + " " + (j + c) + " " + r + " " + c);
-                                    gold++;
-                                }
+                                if(i - r >= 0 && table[i - r][j + c] == 1) gold++;
+                                if(i + r < N && table[i + r][j + c] == 1) gold++;
                             }
                             if(j - c >= 0) {
-                                if(i - r >= 0 && table[i - r][j - c] == 1) {
-                                    // System.out.println((i - r) + " " + (j - c) + " " + r + " " + c);
-                                    gold++;
-                                }
-                                if(i + r < N && table[i + r][j - c] == 1) {
-                                    // System.out.println((i + r) + " " + (j - c) + " " + r + " " + c);
-                                    gold++;
-                                }
+                                if(i - r >= 0 && table[i - r][j - c] == 1) gold++;
+                                if(i + r < N && table[i + r][j - c] == 1) gold++;
                             }
                         }
                     }
-
-                    // System.out.println(gold * M - cost);
-                    // System.out.println();
 
                     if(gold * M - cost >= 0) {
                         max = Math.max(max, gold);
