@@ -20,7 +20,7 @@ public class Main {
         int max = 0;
         for(int i = 0; i < N; i++) {
             for(int j = 0; j < N; j++) {
-                int k = 1;
+                int k = 0;
 
                 while(k <= N) {
                     int gold = 0;
@@ -82,6 +82,7 @@ public class Main {
                         }
                     }
 
+                    // System.out.println(gold * M - cost);
                     // System.out.println();
 
                     if(gold * M - cost >= 0) {
